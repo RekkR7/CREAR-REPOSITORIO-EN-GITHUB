@@ -31,7 +31,7 @@ body {
 }
 
 .navBar .menu {
-    grid-column: 3 / 8;
+    grid-column: 2 / 8;
     display: flex;
     justify-content: space-evenly;
     font-size: 25px;
