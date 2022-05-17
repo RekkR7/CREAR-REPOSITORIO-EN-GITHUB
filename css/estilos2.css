@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER - MENU - LOGO CONTACTO*/
+
+.navBar {
+    background-color: #DBCBD8;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+    background: linear-gradient(to right, #F2FDFF, #DBCBD8, #dda8d2);
+}
+
+.navBar .logo {
+    width: 90px;
+    height: 90px;
+    margin: 20px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.logo:hover {
+    width: 100px;
+    height: 100px;
+}
+
+.navBar .menu {
+    grid-column: 2 / 8;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 25px;
+}
+
+.menu a {
+    height: 100px;
+    transition: 1s;
+}
+
+.menu .a:hover {
+    height: 200px;
+}
+
+.navBar .menu li {
+    list-style: none;
+}
+
+.navBar .menu a {
+    text-decoration: none;
+    color: #101935;
+    cursor: pointer;
+}
+
+.navBar .menu a:hover {
+    color: rgb(255, 255, 255);
+}
+
+@media (max-width: 375px) {
+    .menu {
+        flex-direction: column;
+    }
+}
+
+
+
+/* MAIN - CONTACTO*/
+
+.main {
+    height: 700px;
+    background-color: #F2FDFF;
+    background-size: cover;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+
+.main .form {
+    display: grid;
+    grid-column: 2 / 8;
+    font-size: 14px;
+    color: #101935;
+}
+
+@media (max-width: 375px) {
+    .menu {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+
+
+/* FOOTER CONTACTO */
+.footer {
+    display: grid;
+    height: 221px;
+    align-items: center;
+    background-color: #101935;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: "Google Facebook Instagram";
+    font-size: 25px;
+}
+
+.div {
+    display: flex;
+    justify-content: space-around;
+    grid-column: 2 / 9;
+}
+
+.div a {
+    text-decoration: none;
+    color: #F2FDFF;
+    width: 100%;
+}
+
+
+
+@media (max-width: 375px) {
+    .div {
+        flex-direction: column;
+        width: 100%;
+        grid-column: 4 / 8;
+    }
+}
+
+/* END */
